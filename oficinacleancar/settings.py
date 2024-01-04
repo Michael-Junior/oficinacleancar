@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'oficinacleancar.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Feel free to alter this value to suit your needs.
-        default='',#postgres://oficinacleancar:8sHsFsDR5yN7IeHwbgAcQ3SfCRE0fSjQ@dpg-cm732q7qd2ns73f18j1g-a/oficinacleancardb',
+        default='postgres://oficinacleancar:8sHsFsDR5yN7IeHwbgAcQ3SfCRE0fSjQ@dpg-cm732q7qd2ns73f18j1g-a/oficinacleancardb',
         conn_max_age=600
     )
 }
@@ -113,6 +113,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'templates/static'),)  
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
