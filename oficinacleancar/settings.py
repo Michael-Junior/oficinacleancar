@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'oficinacleancar.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Feel free to alter this value to suit your needs.
-        default='postgres://oficinacleancar:8sHsFsDR5yN7IeHwbgAcQ3SfCRE0fSjQ@dpg-cm732q7qd2ns73f18j1g-a/oficinacleancardb',
+        default='',# postgres://oficinacleancar:8sHsFsDR5yN7IeHwbgAcQ3SfCRE0fSjQ@dpg-cm732q7qd2ns73f18j1g-a/oficinacleancardb',
         conn_max_age=600
     )
 }
